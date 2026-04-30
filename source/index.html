@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
@@ -331,16 +336,14 @@
     <footer class="page__footer main-footer">
       <h2 class="visually-hidden">Наши контакты и дополнительная информация</h2>
       <div class="main-footer__map map">
-        <noscript>
-          <picture>
-            <source width="1440" height="540" type="image/webp" media="(min-width: 1280px)" srcset="images/slider/map-desktop@1x.webp 1x, images/slider/map-desktop@2x.webp 2x">
-            <source width="768" height="480" type="image/webp" media="(min-width: 768px)" srcset="images/slider/map-tablet@1x.webp 1x, images/slider/map-tablet@2x.webp 2x">
-            <source width="320" height="420" type="image/webp" srcset="images/slider/map-mobile@1x.webp 1x, images/slider/map-mobile@2x.webp 2x">
-            <source width="1440" height="540" type="image/jpg" media="(min-width: 1280px)" srcset="images/slider/map-desktop@1x.jpg 1x, images/slider/map-desktop@2x.jpg 2x">
-            <source width="768" height="480" type="image/jpg" media="(min-width: 768px)" srcset="images/slider/map-tablet@1x.jpg 1x, images/slider/map-tablet@2x.jpg 2x">
-            <img class="map__img" src="images/slider/map-mobile@1x.jpg" srcset="images/slider/map-mobile@2x.jpg 2x" width="320" height="420" alt="Мы на карте">
-          </picture>
-        </noscript>
+        <picture>
+          <source width="1440" height="540" type="image/webp" media="(min-width: 1280px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+          <source width="768" height="480" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+          <source width="320" height="420" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
+          <source width="1440" height="540" type="image/jpg" media="(min-width: 1280px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x">
+          <source width="768" height="480" type="image/jpg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
+          <img class="map__img" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" width="320" height="420" alt="Мы на карте">
+        </picture>
       </div>
       <div class="main-footer__links">
         <a class="main-footer__logo logo-footer" href="index.html">
