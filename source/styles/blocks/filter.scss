@@ -1,0 +1,25 @@
+.filter__price {
+  border: none;
+}
+
+.filter__milk {
+  border: none;
+}
+
+.filter__country {
+  border: none;
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__apply {
+  @include button;
+}
+
+.filter__reset {
+  @include button-reset;
+}

@@ -1,0 +1,22 @@
+.features {
+  padding: 50px 20px 60px;
+  text-align: center;
+}
+
+.features__title {
+  @include font-params(12px, 16px);
+  margin: 0;
+  color: $primary-color;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features__subtitle {
+  @include font-params(24px, 36px);
+  margin: 0;
+  font-weight: 700;
+}
+
+.features__list {
+  @include list-reset;
+}

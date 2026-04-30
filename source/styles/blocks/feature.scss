@@ -1,0 +1,9 @@
+.feature__title {
+  @include font-params(18px, 32px);
+  margin: 0;
+  font-weight: 700;
+}
+
+.feature__description {
+  margin: 0;
+}

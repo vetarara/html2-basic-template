@@ -1,0 +1,9 @@
+.menu-user {
+  @include list-reset;
+}
+
+.menu-user__link {
+  @include link;
+  @include font-params(12px, 16px);
+  color: $base-black;
+}

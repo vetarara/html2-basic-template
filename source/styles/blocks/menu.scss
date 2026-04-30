@@ -1,0 +1,9 @@
+.menu {
+  @include list-reset;
+}
+
+.menu__link {
+  @include link;
+  @include font-params(12px, 16px);
+  color: $base-black;
+}

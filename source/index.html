@@ -63,7 +63,7 @@
     <main class="page__main">
       <section class="page__slider slider">
         <h2 class="visually-hidden">Самые популярные напитки</h2>
-        <div class="slider__wrapper">
+        <div class="slider__wrapper slider__wrapper--flat-white">
           <picture class="slider__image-wrapper">
             <source width="600" height="600" type="image/webp" media="(min-width: 1280px)" srcset="images/slider/flat-white-slider-desktop@1x.webp 1x, images/slider/flat-white-slider-desktop@2x.webp 2x">
             <source width="476" height="476" type="image/webp" media="(min-width: 768px)" srcset="images/slider/flat-white-slider-tablet@1x.webp 1x, images/slider/flat-white-slider-tablet@2x.webp 2x">
@@ -84,7 +84,7 @@
             <a class="promo-order__order-button" href="#">Заказать</a>
           </div>
         </div>
-        <div class="slider__wrapper">
+        <div class="slider__wrapper slider__wrapper--lavender">
           <picture class="slider__image-wrapper">
             <source width="600" height="600" type="image/webp" media="(min-width: 1280px)" srcset="images/slider/lavender-slider-desktop@1x.webp 1x, images/slider/lavender-slider-desktop@2x.webp 2x">
             <source width="476" height="476" type="image/webp" media="(min-width: 768px)" srcset="images/slider/lavender-slider-tablet@1x.webp 1x, images/slider/lavender-slider-tablet@2x.webp 2x">
@@ -105,7 +105,7 @@
             <a class="promo-order__order-button" href="#">Заказать</a>
           </div>
         </div>
-        <div class="slider__wrapper">
+        <div class="slider__wrapper slider__wrapper--tripple-espresso">
           <picture class="slider__image-wrapper">
             <source width="600" height="600" type="image/webp" media="(min-width: 1280px)" srcset="images/slider/tripple-espresso-slider-desktop@1x.webp 1x, images/slider/tripple-espresso-slider-desktop@2x.webp 2x">
             <source width="476" height="476" type="image/webp" media="(min-width: 768px)" srcset="images/slider/tripple-espresso-slider-tablet@1x.webp 1x, images/slider/tripple-espresso-slider-tablet@2x.webp 2x">
@@ -153,74 +153,72 @@
         <h2 class="catalog__title">Каталог</h2>
         <p class="catalog__subtitle">Каталог кофейных напитков</p>
         <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter__price price">
-            <legend class="price__title">Цена</legend>
-            <div class="price__toggle">
-              <button class="price__toggle-min" type="button">
+          <fieldset class="filter__price filter-range">
+            <legend class="filter-range__title">Цена</legend>
+            <div class="filter-range__toggle">
+              <button class="filter-range__toggle-min" type="button">
                 <span class="visually-hidden">Изменить минимальную стоимость</span>
               </button>
-              <button class="price__toggle-max" type="button">
+              <button class="filter-range__toggle-max" type="button">
                 <span class="visually-hidden">Изменить максимальную стоимость</span>
               </button>
             </div>
-            <div class="price__change">
-              <label class="price__change-min visually-hidden" for="min">от</label>
-              <input class="price__change-input" id="min" name="min-price" type="number" value="0" min="0">
-
-              <label class="price__change-max  visually-hidden" for="max">до</label>
-              <input class="price__change-input" id="max" name="max-price" type="number" value="9000" min="0">
+            <div class="filter-range__change">
+              <label class="filter-range__change-min visually-hidden" for="min">от</label>
+              <input class="filter-range__change-input" id="min" name="min-price" type="number" value="0" min="0">
+              <label class="filter-range__change-max  visually-hidden" for="max">до</label>
+              <input class="filter" id="max" name="max-price" type="number" value="9000" min="0">
             </div>
           </fieldset>
-          <fieldset class="filter__milk milk">
-            <legend class="milk__title">Наличие молока</legend>
-            <div class="milk__list">
-              <label class="milk__control" for="nomatter">
-                <input class="milk__input" id="nomatter" name="milk-presence" type="radio" value="nomatter" checked>
+          <fieldset class="filter__milk filter-radio">
+            <legend class="filter-radio__title">Наличие молока</legend>
+            <div class="filter-radio__list">
+              <label class="filter-radio__control" for="nomatter">
+                <input class="filter-radio__input" id="nomatter" name="milk-presence" type="radio" value="nomatter" checked>
                 Неважно
               </label>
-              <label class="milk__control" for="animal">
-                <input class="milk__input" id="animal" name="milk-presence" type="radio" value="animal">
+              <label class="filter-radio__control" for="animal">
+                <input class="filter-radio__input" id="animal" name="milk-presence" type="radio" value="animal">
                 Только животное
               </label>
-              <label class="milk__control" for="plant">
-                <input class="milk__input" id="plant" name="milk-presence" type="radio" value="plant">
+              <label class="filter-radio__control" for="plant">
+                <input class="filter-radio__input" id="plant" name="milk-presence" type="radio" value="plant">
                 Только растительное
               </label>
-              <label class="milk__control" for="milkless">
-                <input class="milk__input" id="milkless" name="milk-presence" type="radio" value="milkless">
+              <label class="filter-radio__control" for="milkless">
+                <input class="filter-radio__input" id="milkless" name="milk-presence" type="radio" value="milkless">
                 Без молока
               </label>
             </div>
           </fieldset>
-          <fieldset class="filter__country country">
-            <legend class="country__title">Страна произрастания</legend>
-            <div class="country__list">
-              <label class="country__control" for="brazil">
-                <input class="country__input" id="brazil" name="country" value="brazil" type="checkbox" checked>
+          <fieldset class="filter__country filter-checkbox">
+            <legend class="filter-checkbox__title">Страна произрастания</legend>
+            <div class="filter-checkbox__list">
+              <label class="filter-checkbox__control" for="brazil">
+                <input class="filter-checkbox__input" id="brazil" name="country" value="brazil" type="checkbox" checked>
                 Бразилия
               </label>
-              <label class="country__control" for="ethiopia">
-                <input class="country__input" id="ethiopia" name="country" value="ethiopia" type="checkbox">
+              <label class="filter-checkbox__control" for="ethiopia">
+                <input class="filter-checkbox__input" id="ethiopia" name="country" value="ethiopia" type="checkbox">
                 Эфиопия
               </label>
-              <label class="country__control" for="colombia">
-                <input class="country__input" id="colombia" name="country" value="colombia" type="checkbox">
+              <label class="filter-checkbox__control" for="colombia">
+                <input class="filter-checkbox__input" id="colombia" name="country" value="colombia" type="checkbox">
                 Колумбия
               </label>
-              <label class="country__control" for="costa-rica">
-                <input class="country__input" id="costa-rica" name="country" value="costa-rica" type="checkbox">
+              <label class="filter-checkbox__control" for="costa-rica">
+                <input class="filter-checkbox__input" id="costa-rica" name="country" value="costa-rica" type="checkbox">
                 Коста-Рика
               </label>
-              <label class="country__control" for="peru">
-                <input class="country__input" id="peru" name="country" value="peru" type="checkbox">
+              <label class="filter-checkbox__control" for="peru">
+                <input class="filter-checkbox__input" id="peru" name="country" value="peru" type="checkbox">
                 Перу
               </label>
             </div>
           </fieldset>
-
           <div class="filter__buttons">
-            <button class="button" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <button class="filter__apply" type="submit">Применить</button>
+            <button class="filter__reset" type="reset">Сбросить</button>
           </div>
         </form>
         <div class="catalog__sorting sorting">

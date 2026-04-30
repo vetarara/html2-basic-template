@@ -1,0 +1,19 @@
+.catalog {
+  padding: 50px 20px 44px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.catalog__title {
+  @include font-params(12px, 16px);
+  margin: 0;
+  color: $primary-color;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog__subtitle {
+  @include font-params(24px, 36px);
+  margin: 0;
+  font-weight: 700;
+}

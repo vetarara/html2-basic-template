@@ -1,0 +1,60 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin font-params ($font-size: 14px, $line-height: 20px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin button {
+  @include link;
+  @include font-params(16px, 24px);
+  padding: 8px;
+  color: $base-white;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-color-lighter;
+  }
+
+  &:active {
+    background-color: $primary-color-darker;
+  }
+}
+
+@mixin button-reset {
+  @include button;
+  color: $primary-color;
+  background-color: $base-white;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: $base-white;
+  }
+}
+

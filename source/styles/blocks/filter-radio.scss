@@ -1,0 +1,17 @@
+.filter-radio {
+  text-align: left;
+}
+
+.filter-radio__title {
+  @include font-params(16px, 24px);
+  font-weight: 600;
+}
+
+.filter-radio__change {
+  display: flex;
+}
+
+.filter-radio__list {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,13 @@
+.filter-range {
+  text-align: left;
+}
+
+.filter-range__title {
+  @include font-params(16px, 24px);
+  font-weight: 600;
+}
+
+.filter-range__change {
+  display: flex;
+}
+
