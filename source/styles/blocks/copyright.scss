@@ -1,0 +1,10 @@
+.copyright__link {
+  @include font-params(12px, 16px);
+  padding-right: 16px;
+  color: $base-grey;
+  text-decoration: none;
+}
+
+.copyright__text {
+  font-weight: 400;
+}

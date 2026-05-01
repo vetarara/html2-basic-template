@@ -17,3 +17,11 @@
   margin: 0;
   font-weight: 700;
 }
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__pagination {
+  margin: 0 auto;
+}

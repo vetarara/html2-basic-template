@@ -1,0 +1,25 @@
+.pagination {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination__link {
+  @include button-secondary;
+  min-width: 40px;
+}
+
+.pagination__item:first-child,
+.pagination__item:last-child {
+  .pagination__link {
+    padding: 8px 20px;
+  }
+}
+
+.pagination__link--current {
+    color: $base-black;
+    background-color: transparent;
+    pointer-events: none;
+    font-weight: 600;
+}

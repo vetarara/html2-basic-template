@@ -9,7 +9,6 @@
 }
 
 @mixin list-reset {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -46,7 +45,7 @@
   }
 }
 
-@mixin button-reset {
+@mixin button-secondary {
   @include button;
   color: $primary-color;
   background-color: $base-white;

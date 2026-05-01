@@ -1,0 +1,46 @@
+.card {
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: $base-white;
+  text-align: left;
+}
+
+.card__link {
+  display: block;
+  margin: 0 auto 20px;
+  width: fit-content;
+}
+
+.card__title {
+  @include font-params(18px, 32px);
+  margin: 0;
+  font-weight: 700;
+}
+
+.card__title-link {
+  text-decoration: none;
+  color: $base-black;
+}
+
+.card__description {
+  margin: auto 0 14px;
+}
+
+.card__purchase {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  @include font-params(20px, 32px);
+  font-weight: 600;
+}
+
+.card__order {
+  @include button;
+  padding: 8px 20px 8px 46px;
+}

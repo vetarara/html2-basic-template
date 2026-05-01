@@ -1,0 +1,10 @@
+.social {
+  @include list-reset;
+}
+
+.social__link {
+  @include link;
+  @include font-params(12px, 16px);
+  font-weight: 500;
+  color: $base-black;
+}

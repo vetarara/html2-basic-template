@@ -10,3 +10,8 @@
 .filter-range__change {
   display: flex;
 }
+
+.filter-range__change-input {
+  @include font-params(16px, 24px);
+  font-weight: 500;
+}

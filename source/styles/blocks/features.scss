@@ -19,4 +19,5 @@
 
 .features__list {
   @include list-reset;
+  margin: 0;
 }
