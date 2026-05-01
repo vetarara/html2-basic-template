@@ -1,3 +1,37 @@
+.feature {
+  position: relative;
+  padding-top: 66px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 52px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+.feature--speed::before {
+  background-image: url("../../icons/stack.svg#features_speed");
+}
+
+.feature--convenience::before {
+  background-image: url("../../icons/stack.svg#features_convenience");
+}
+
+.feature--vigor::before {
+  background-image: url("../../icons/stack.svg#features_vigor");
+}
+
+.feature--ecofriendly::before {
+  background-image: url("../../icons/stack.svg#features_ecofriendly");
+}
+
 .feature__title {
   @include font-params(18px, 32px);
   margin: 0;
