@@ -8,12 +8,55 @@
 .pagination__link {
   @include button-secondary;
   min-width: 40px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-color;
+  }
+
+  &:active {
+    background-color: $primary-color-darker;
+  }
 }
 
 .pagination__item:first-child,
 .pagination__item:last-child {
   .pagination__link {
-    padding: 8px 20px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      mask-size: 16px 16px;
+      background-color: $base-black;
+      mask-position: 50%;
+      mask-repeat: no-repeat;
+      mask-image: url("../../icons/stack.svg#down-stroke");
+    }
+
+    &:hover::before,
+    &:focus-visible::before,
+    &:active::before {
+      background-color: $base-white;
+    }
+  }
+}
+
+.pagination__item:first-child {
+  .pagination__link::before {
+    transform: rotate(90deg);
+  }
+}
+
+.pagination__item:last-child {
+  .pagination__link::before {
+    transform: rotate(-90deg);
   }
 }
 

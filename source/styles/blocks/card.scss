@@ -43,4 +43,20 @@
 .card__order {
   @include button;
   padding: 8px 20px 8px 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: block;
+    width: 20px;
+    height: 16px;
+    mask-size: 20px 16px;
+    background-color: $base-white;
+    mask-position: 50%;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/stack.svg#add-to-cart");
+  }
 }

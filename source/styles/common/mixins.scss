@@ -43,6 +43,12 @@
   &:active {
     background-color: $primary-color-darker;
   }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $base-grey;
+    cursor: not-allowed;
+  }
 }
 
 @mixin button-secondary {
@@ -54,5 +60,11 @@
   &:focus-visible,
   &:active {
     color: $base-white;
+  }
+
+  &:disabled,
+  &[disabled] {
+    color: $base-white;
+    background-color: $light-grey;
   }
 }
