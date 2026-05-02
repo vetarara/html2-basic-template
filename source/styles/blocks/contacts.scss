@@ -1,6 +1,11 @@
+.contacts {
+  padding: 20px;
+  border-bottom: 1px solid $secondary-color;
+}
+
 .contacts__title {
   @include font-params;
-  margin: 0;
+  margin: 0 0 20px;
   color: $primary-color;
   font-weight: 700;
 }
@@ -8,6 +13,7 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   font-style: normal;
 }
 

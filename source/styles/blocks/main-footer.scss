@@ -1,7 +1,15 @@
-.main-footer {
-  padding: 22px 20px 30px;
+.main-footer__links {
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $secondary-color;
 }
 
 .main-footer__social {
   margin: 0;
+}
+
+.main-footer__copyright {
+  text-align: center;
 }

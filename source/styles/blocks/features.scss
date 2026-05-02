@@ -5,7 +5,7 @@
 
 .features__title {
   @include font-params(12px, 16px);
-  margin: 0;
+  margin: 0 0 4px;
   color: $primary-color;
   font-weight: 700;
   text-transform: uppercase;
@@ -13,11 +13,14 @@
 
 .features__subtitle {
   @include font-params(24px, 36px);
-  margin: 0;
+  margin: 0 0 36px;
   font-weight: 700;
 }
 
 .features__list {
   @include list-reset;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

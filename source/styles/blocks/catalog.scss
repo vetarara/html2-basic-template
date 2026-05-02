@@ -20,6 +20,7 @@
 
 .catalog__list {
   @include list-reset;
+  margin: 0;
 }
 
 .catalog__pagination {
