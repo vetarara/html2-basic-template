@@ -15,6 +15,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/mobile-menu.js" defer></script>
   </head>
   <body class="page__body">
     <header class="page__header main-header">
@@ -28,9 +29,8 @@
         </a>
         <h1 class="logo-title__title title visually-hidden">Интернет-магазин кофейных напитков</h1>
       </div>
-      <nav class="main-header__nav main-nav">
-        <button class="main-nav__list-toggle" type="button" aria-label="Открыть меню">
-          <!-- оставить либо ариа-лейбл, либо хидден спан -->
+      <nav class="main-header__nav main-nav main-nav--menu-closed">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list menu">
@@ -343,7 +343,7 @@
           <li class="pagination__item">
             <a class="pagination__link" href="#">
               <span class="visually-hidden">Вперёд</span>
-              </a>
+            </a>
           </li>
         </ul>
       </section>

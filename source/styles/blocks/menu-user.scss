@@ -1,5 +1,6 @@
 .menu-user {
   @include list-reset;
+  display: flex;
 }
 
 .menu-user__link {

@@ -2,11 +2,74 @@
   display: flex;
 }
 
-.main-nav__list {
-  margin: 0;
-}
-
 .main-nav__user-list {
   margin: 0;
   order: -1;
+}
+
+.main-nav__list {
+  margin: 0;
+  width: auto;
+  background-color: $base-white;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--menu-closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--menu-opened .main-nav__list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    border-top: 1px solid $light-grey;
+  }
+
+  .main-nav__toggle {
+    @include link;
+    @include font-params(12px, 16px);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: $base-white;
+    cursor: pointer;
+    border: none;
+    color: $base-black;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $secondary-color;
+    }
+  }
+
+  .main-nav--menu-closed .main-nav__toggle::before {
+    background-image: url("../../icons/stack.svg#burger-button");
+  }
+
+  .main-nav--menu-opened .main-nav__toggle::before {
+    background-image: url("../../icons/stack.svg#close-button");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
