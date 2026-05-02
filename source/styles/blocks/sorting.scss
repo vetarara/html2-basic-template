@@ -11,7 +11,7 @@
 
 .sorting__select {
   @include font-params(16px, 24px);
-  padding: 4px 10px;
+  padding: 4px 0 4px 10px;
   font-family: inherit;
   font-weight: 600;
   color: $primary-color;
@@ -19,7 +19,7 @@
   background-image: url("../../icons/stack.svg#down-stroke");
   background-size: 10px 6px;
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 10px center;
   border: none;
   text-transform: lowercase;
   appearance: none;

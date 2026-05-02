@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- шрифты
-      <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
-      <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
-    -->
+    <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/montserrat/Montserrat-SemiBold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/montserrat/Montserrat-Bold.woff2" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="#" type="font/woff2" as="font">
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/mobile-menu.js" defer></script>
   </head>
   <body class="page__body">
     <header class="page__header main-header">
@@ -153,17 +151,17 @@
           <fieldset class="filter__price filter-range">
             <legend class="filter-range__title">Цена</legend>
             <div class="filter-range__toggle">
-              <button class="filter-range__toggle-min" type="button">
+              <button class="filter-range__toggle-button filter-range__toggle-button--min" type="button">
                 <span class="visually-hidden">Изменить минимальную стоимость</span>
               </button>
-              <button class="filter-range__toggle-max" type="button">
+              <button class="filter-range__toggle-button filter-range__toggle-button--max" type="button">
                 <span class="visually-hidden">Изменить максимальную стоимость</span>
               </button>
             </div>
             <div class="filter-range__change">
-              <label class="filter-range__change-min visually-hidden" for="min">от</label>
+              <label class="visually-hidden" for="min">от</label>
               <input class="filter-range__change-input" id="min" name="min-price" type="number" value="0" min="0">
-              <label class="filter-range__change-max  visually-hidden" for="max">до</label>
+              <label class="visually-hidden" for="max">до</label>
               <input class="filter-range__change-input" id="max" name="max-price" type="number" value="900" min="0">
             </div>
           </fieldset>
@@ -219,7 +217,6 @@
           </div>
         </form>
         <div class="catalog__sorting sorting">
-          <!-- возможно, этот див лишний -->
           <label class="sorting__control" for="select-control">Сортировка:</label>
           <select class="sorting__select" id="select-control" name="sorting">
             <option value="sorting__default">По умолчанию</option>
@@ -430,7 +427,7 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано в <strong class="copyright__text">HTML Academy</strong>
+          Разработано в <strong class="copyright__dev">HTML Academy</strong>
         </a>
       </div>
     </footer>
