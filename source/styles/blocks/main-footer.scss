@@ -4,6 +4,12 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    align-items: start;
+  }
 }
 
 .main-footer__links {
@@ -16,6 +22,30 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    height: 100%;
+    padding: 22px 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__subtitle {
+  @media (min-width: $desktop-width) {
+    @include font-params;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    font-weight: 400;
+    overflow: visible;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
   }
 }
 

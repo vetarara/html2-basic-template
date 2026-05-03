@@ -161,7 +161,7 @@
               </div>
               <div class="filter-range__change">
                 <label class="visually-hidden" for="min">от</label>
-                <input class="filter-range__change-input" id="min" name="min-price" type="number" value="0" min="0">
+                <input class="filter-range__change-input" id="min" name="min-price" type="number" placeholder="0" min="0">
                 <label class="visually-hidden" for="max">до</label>
                 <input class="filter-range__change-input" id="max" name="max-price" type="number" value="900" min="0">
               </div>
@@ -363,12 +363,15 @@
       <h2 class="visually-hidden">Наши контакты и дополнительная информация</h2>
 
       <div class="main-footer__links">
-        <a class="main-footer__logo logo-footer" href="index.html">
-          <picture>
-            <source width="170" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-desktop.svg">
-            <img class="logo-footer__image" src="images/logo/logo-tablet.svg" width="82" height="36" alt="Логотип магазина">
-          </picture>
-        </a>
+        <div class="main-footer__logo-wrapper">
+          <a class="main-footer__logo logo-footer" href="index.html">
+            <picture>
+              <source width="170" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-desktop.svg">
+              <img class="logo-footer__image" src="images/logo/logo-tablet.svg" width="82" height="36" alt="Логотип магазина">
+            </picture>
+          </a>
+          <p class="main-footer__subtitle visually-hidden">Интернет-магазин кофейных напитков</p>
+        </div>
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">

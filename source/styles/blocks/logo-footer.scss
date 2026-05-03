@@ -1,3 +1,7 @@
 .logo-footer__image {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }

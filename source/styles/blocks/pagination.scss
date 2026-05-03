@@ -45,6 +45,7 @@
     }
   }
 
+  // стили разбиты так для избежания слишком большой вложенности
   .pagination__link::before {
     content: "";
     display: block;

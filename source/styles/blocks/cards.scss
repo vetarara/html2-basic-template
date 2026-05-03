@@ -9,4 +9,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
