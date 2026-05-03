@@ -1,15 +1,56 @@
+.main-footer {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .main-footer__links {
   padding: 22px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    border: none;
+  }
 }
 
 .main-footer__social {
   margin: 0;
 }
 
+.main-footer__nav {
+  border-bottom: 1px solid $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-footer__info {
+  border-bottom: 1px solid $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-footer__contacts {
+  border-bottom: 1px solid $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .main-footer__copyright {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }

@@ -5,6 +5,7 @@
   @media (min-width: 767px) {
     display: flex;
     align-items: center;
+    gap: 2px;
   }
 }
 
@@ -22,6 +23,7 @@
   position: relative;
   width: 100%;
   padding: 12px 20px;
+  font-weight: 500;
   color: $base-black;
   background-color: $base-white;
 
@@ -37,5 +39,10 @@
   // не tablet-width для корректного сокрытия кнопки и отображения меню при на 767px
   @media (min-width: 767px) {
     padding: 32px 20px;
+  }
+
+  &--current {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
   }
 }

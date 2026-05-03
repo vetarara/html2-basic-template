@@ -25,6 +25,17 @@
       transform: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 66px;
+    text-align: center;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .feature--speed::before {
@@ -47,6 +58,10 @@
   @include font-params(18px, 32px);
   margin: 0 0 4px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .feature__description {

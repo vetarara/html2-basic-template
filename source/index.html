@@ -20,12 +20,12 @@
       <div class="main-header__logo-title logo-title">
         <a class="logo-title__logo logo" href="index.html" aria-current="page">
           <picture>
-            <source width="170" height="36" type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo/logo-desktop.svg">
+            <source width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
             <source width="82" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
             <img class="logo__image" src="images/logo/logo-mobile.svg" width="32" height="36" alt="Логотип магазина">
           </picture>
         </a>
-        <h1 class="logo-title__title title visually-hidden">Интернет-магазин кофейных напитков</h1>
+        <h1 class="logo-title__header visually-hidden">Интернет-магазин кофейных напитков</h1>
       </div>
       <nav class="main-header__nav main-nav main-nav--menu-closed">
         <button class="main-nav__toggle" type="button">
@@ -217,143 +217,144 @@
               <button class="filter__reset" type="reset">Сбросить</button>
             </div>
           </form>
-          <div class="catalog__sorting sorting">
-            <label class="sorting__control" for="select-control">Сортировка:</label>
-            <select class="sorting__select" id="select-control" name="sorting">
-              <option value="sorting__default">По умолчанию</option>
-              <option value="sorting__inexpensive">По стоимости</option>
-              <option value="sorting__popular">По популярности</option>
-            </select>
-          </div>
-          <ul class="catalog__list cards">
-            <li class="cards__item card">
-              <a class="card__link" href="#">
-                <picture>
-                  <source width="130" height="188" type="image/webp" srcset="images/catalog/light-can@1x.webp 1x, images/catalog/light-can@2x.webp 2x">
-                  <img class="card__image" src="images/catalog/light-can@1x.jpg" srcset="images/catalog/light-can@2x.jpg 2x" width="130" height="188" alt="Светлая баночка кофе">
-                </picture>
-              </a>
-              <h3 class="card__title">
-                <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
-              </h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              <div class="card__purchase">
-                <strong class="card__price">225 ₽</strong>
-                <a class="card__order" href="#">В корзину</a>
-              </div>
-            </li>
-            <li class="cards__item card">
-              <a class="card__link" href="#">
-                <picture>
-                  <source width="130" height="188" type="image/webp" srcset="images/catalog/lavender-can@1x.webp 1x, images/catalog/lavender-can@2x.webp 2x">
-                  <img class="card__image" src="images/catalog/lavender-can@1x.jpg" srcset="images/catalog/lavender-can@2x.jpg 2x" width="130" height="188" alt="Лавандовая баночка кофе">
-                </picture>
-              </a>
-              <h3 class="card__title">
-                <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
-              </h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              <div class="card__purchase">
-                <strong class="card__price">225 ₽</strong>
-                <a class="card__order" href="#">В корзину</a>
-              </div>
-            </li>
-            <li class="cards__item card">
-              <a class="card__link" href="#">
-                <picture>
-                  <source width="130" height="188" type="image/webp" srcset="images/catalog/black-can@1x.webp 1x, images/catalog/black-can@2x.webp 2x">
-                  <img class="card__image" src="images/catalog/black-can@1x.jpg" srcset="images/catalog/black-can@2x.jpg 2x" width="130" height="188" alt="Чёрная баночка кофе">
-                </picture>
-              </a>
-              <h3 class="card__title">
-                <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
-              </h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              <div class="card__purchase">
-                <strong class="card__price">225 ₽</strong>
-                <a class="card__order" href="#">В корзину</a>
-              </div>
-            </li>
-            <li class="cards__item card">
-              <a class="card__link" href="#">
-                <picture>
-                  <source width="130" height="188" type="image/webp" srcset="images/catalog/pink-can@1x.webp 1x, images/catalog/pink-can@2x.webp 2x">
-                  <img class="card__image" src="images/catalog/pink-can@1x.jpg" srcset="images/catalog/pink-can@2x.jpg 2x" width="130" height="188" alt="Розовая баночка кофе">
-                </picture>
-              </a>
-              <h3 class="card__title">
-                <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
-              </h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              <div class="card__purchase">
-                <strong class="card__price">225 ₽</strong>
-                <a class="card__order" href="#">В корзину</a>
-              </div>
-            </li>
-            <li class="cards__item card">
-              <a class="card__link" href="#">
-                <picture>
-                  <source width="130" height="188" type="image/webp" srcset="images/catalog/brown-can@1x.webp 1x, images/catalog/brown-can@2x.webp 2x">
-                  <img class="card__image" src="images/catalog/brown-can@1x.jpg" srcset="images/catalog/brown-can@2x.jpg 2x" width="130" height="188" alt="Коричневая баночка кофе">
-                </picture>
-              </a>
-              <h3 class="card__title">
-                <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
-              </h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              <div class="card__purchase">
+          <div class="catalog__cards-wrapper">
+            <div class="catalog__sorting sorting">
+              <label class="sorting__control" for="select-control">Сортировка:</label>
+              <select class="sorting__select" id="select-control" name="sorting">
+                <option value="sorting__default">По умолчанию</option>
+                <option value="sorting__inexpensive">По стоимости</option>
+              </select>
+            </div>
+            <ul class="catalog__list cards">
+              <li class="cards__item card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/light-can@1x.webp 1x, images/catalog/light-can@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/light-can@1x.jpg" srcset="images/catalog/light-can@2x.jpg 2x" width="130" height="188" alt="Светлая баночка кофе">
+                  </picture>
+                </a>
+                <h3 class="card__title">
+                  <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
+                </h3>
+                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="card__purchase">
+                  <strong class="card__price">225 ₽</strong>
+                  <a class="card__order" href="#">В корзину</a>
+                </div>
+              </li>
+              <li class="cards__item card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/lavender-can@1x.webp 1x, images/catalog/lavender-can@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/lavender-can@1x.jpg" srcset="images/catalog/lavender-can@2x.jpg 2x" width="130" height="188" alt="Лавандовая баночка кофе">
+                  </picture>
+                </a>
+                <h3 class="card__title">
+                  <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
+                </h3>
+                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="card__purchase">
+                  <strong class="card__price">225 ₽</strong>
+                  <a class="card__order" href="#">В корзину</a>
+                </div>
+              </li>
+              <li class="cards__item card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/black-can@1x.webp 1x, images/catalog/black-can@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/black-can@1x.jpg" srcset="images/catalog/black-can@2x.jpg 2x" width="130" height="188" alt="Чёрная баночка кофе">
+                  </picture>
+                </a>
+                <h3 class="card__title">
+                  <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
+                </h3>
+                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="card__purchase">
+                  <strong class="card__price">225 ₽</strong>
+                  <a class="card__order" href="#">В корзину</a>
+                </div>
+              </li>
+              <li class="cards__item card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/pink-can@1x.webp 1x, images/catalog/pink-can@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/pink-can@1x.jpg" srcset="images/catalog/pink-can@2x.jpg 2x" width="130" height="188" alt="Розовая баночка кофе">
+                  </picture>
+                </a>
+                <h3 class="card__title">
+                  <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
+                </h3>
+                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="card__purchase">
+                  <strong class="card__price">225 ₽</strong>
+                  <a class="card__order" href="#">В корзину</a>
+                </div>
+              </li>
+              <li class="cards__item card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/brown-can@1x.webp 1x, images/catalog/brown-can@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/brown-can@1x.jpg" srcset="images/catalog/brown-can@2x.jpg 2x" width="130" height="188" alt="Коричневая баночка кофе">
+                  </picture>
+                </a>
+                <h3 class="card__title">
+                  <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
+                </h3>
+                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="card__purchase">
                 <strong class="card__price">225 ₽</strong>
                 <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>
               <li class="cards__item card">
-              <a class="card__link" href="#">
-                <picture>
-                  <source width="130" height="188" type="image/webp" srcset="images/catalog/yellow-can@1x.webp 1x, images/catalog/yellow-can@2x.webp 2x">
-                  <img class="card__image" src="images/catalog/yellow-can@1x.jpg" srcset="images/catalog/yellow-can@2x.jpg 2x" width="130" height="188" alt="Жёлтая баночка кофе">
-                </picture>
-              </a>
-              <h3 class="card__title">
-                <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
-              </h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              <div class="card__purchase">
-                <strong class="card__price">225 ₽</strong>
-                <a class="card__order" href="#">В корзину</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="catalog__pagination pagination">
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                <span class="visually-hidden">Назад</span>
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--current" href="#" aria-current="page" tabindex="-1">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                <span class="visually-hidden">Вперёд</span>
-              </a>
-            </li>
-          </ul>
+                <a class="card__link" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/yellow-can@1x.webp 1x, images/catalog/yellow-can@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/yellow-can@1x.jpg" srcset="images/catalog/yellow-can@2x.jpg 2x" width="130" height="188" alt="Жёлтая баночка кофе">
+                  </picture>
+                </a>
+                <h3 class="card__title">
+                  <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
+                </h3>
+                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="card__purchase">
+                  <strong class="card__price">225 ₽</strong>
+                  <a class="card__order" href="#">В корзину</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="catalog__pagination pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">
+                  <span class="visually-hidden">Назад</span>
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current" href="#" aria-current="page" tabindex="-1">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">
+                  <span class="visually-hidden">Вперёд</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="page__map map">
         <h2 class="visually-hidden">Как нас найти</h2>
         <picture>
           <source width="1440" height="540" type="image/webp" media="(min-width: 1280px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
-          <source width="768" height="480" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+          <source width="768" height="480" type="image/webp" media="(min-width: 575px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
           <source width="320" height="420" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
           <source width="1440" height="540" type="image/jpg" media="(min-width: 1280px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x">
-          <source width="768" height="480" type="image/jpg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
+          <source width="768" height="480" type="image/jpg" media="(min-width: 575px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
           <img class="map__img" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" width="320" height="420" alt="Карта с меткой на набережной реки Карповки, 5">
         </picture>
       </section>

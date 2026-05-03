@@ -42,16 +42,16 @@
   &:active {
     background-color: rgba(120, 89, 207, 25%);
   }
-}
 
-.social__link--vk::before {
-  mask-image: url("../../icons/stack.svg#social_vk");
-}
+  &--vk::before {
+    mask-image: url("../../icons/stack.svg#social_vk");
+  }
 
-.social__link--pinterest::before {
-  mask-image: url("../../icons/stack.svg#social_pinterest");
-}
+  &--pinterest::before {
+    mask-image: url("../../icons/stack.svg#social_pinterest");
+  }
 
-.social__link--ok::before {
-  mask-image: url("../../icons/stack.svg#social_ok");
+  &--ok::before {
+    mask-image: url("../../icons/stack.svg#social_ok");
+  }
 }

@@ -7,12 +7,24 @@
     padding-top: 80px;
     padding-bottom: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     max-width: 728px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1360px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 30px;
   }
 }
 
@@ -22,6 +34,10 @@
   color: $primary-color;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .catalog__subtitle {
@@ -31,6 +47,16 @@
 
   @media (min-width: $tablet-width) {
     @include font-params(42px, 64px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.catalog__filter {
+  @media (min-width: $desktop-width) {
+    max-width: 318px;
   }
 }
 

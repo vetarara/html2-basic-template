@@ -4,17 +4,24 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: none;
+  }
 }
 
 .filter__price {
+  margin: 0 0 30px;
   border: none;
 }
 
 .filter__milk {
+  margin: 0 0 30px;
   border: none;
 }
 
 .filter__country {
+  margin: 0 0 30px;
   border: none;
 }
 
