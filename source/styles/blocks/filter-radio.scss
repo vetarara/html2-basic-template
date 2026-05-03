@@ -1,0 +1,53 @@
+.filter-radio {
+  padding: 0;
+  text-align: left;
+}
+
+.filter-radio__title {
+  @include font-params(16px, 24px);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.filter-radio__change {
+  display: flex;
+}
+
+.filter-radio__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter-radio__control {
+  @include font-params(16px, 24px);
+  color: $base-black;
+}
+
+.filter-radio__input {
+  margin: 0;
+  margin-right: 5px;
+  position: relative;
+  top: 6px;
+  appearance: none;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  background-color: $base-white;
+  border-radius: 50%;
+  border: 2px solid $primary-color;
+  cursor: pointer;
+
+  &[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,14 @@
+.footer-info {
+  padding: 20px;
+}
+
+.footer-info__title {
+  @include font-params;
+  margin: 0 0 12px;
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.footer-info__media {
+  margin: 0;
+}

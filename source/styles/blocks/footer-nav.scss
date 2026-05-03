@@ -1,0 +1,14 @@
+.footer-nav {
+  padding: 20px;
+}
+
+.footer-nav__title {
+  @include font-params;
+  margin: 0 0 12px;
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.footer-nav__list {
+  margin: 0;
+}

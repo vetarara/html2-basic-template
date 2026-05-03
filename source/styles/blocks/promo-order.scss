@@ -1,0 +1,28 @@
+.promo-order {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.promo-order__price {
+  margin: 0;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.promo-order__price-old {
+  @include font-params(16px, 20px);
+  color: $primary-color;
+  text-decoration: line-through;
+}
+
+.promo-order__price-promotion {
+  @include font-params(20px, 32px);
+  font-weight: 700;
+}
+
+.promo-order__order-button {
+  @include button;
+  min-width: 113px;
+}

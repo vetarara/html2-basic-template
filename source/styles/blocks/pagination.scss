@@ -1,0 +1,95 @@
+.pagination {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.pagination__link {
+  @include button-secondary;
+  min-width: 40px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-color;
+  }
+
+  &:active {
+    background-color: $primary-color-darker;
+  }
+
+  &--current {
+    color: $base-black;
+    background-color: transparent;
+    pointer-events: none;
+    font-weight: 600;
+  }
+}
+
+.pagination__item:first-child,
+.pagination__item:last-child {
+  .pagination__link {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  // стили разбиты так для избежания слишком большой вложенности
+  .pagination__link::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    mask-size: 16px 16px;
+    background-color: $base-black;
+    mask-position: 50%;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/stack.svg#down-stroke");
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  .pagination__link:hover::before,
+  .pagination__link:focus-visible::before,
+  .pagination__link:active::before {
+    background-color: $base-white;
+  }
+}
+
+.pagination__item:first-child {
+  .pagination__link::before {
+    transform: rotate(90deg);
+  }
+}
+
+.pagination__item:last-child {
+  .pagination__link::before {
+    transform: rotate(-90deg);
+  }
+}
+
+.pagination .visually-hidden {
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
+  }
+}
