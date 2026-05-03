@@ -3,6 +3,10 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .pagination__link {

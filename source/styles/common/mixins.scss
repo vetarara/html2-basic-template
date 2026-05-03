@@ -28,6 +28,7 @@
   @include link;
   @include font-params(16px, 24px);
   padding: 8px;
+  font-family: $primary-font;
   color: $base-white;
   background-color: $primary-color;
   border: none;

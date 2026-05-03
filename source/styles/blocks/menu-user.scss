@@ -1,6 +1,7 @@
 .menu-user {
   @include list-reset;
   display: flex;
+  align-items: center;
 }
 
 .menu-user__link {
@@ -36,6 +37,10 @@
 
   &:active {
     background-color: $secondary-color;
+  }
+
+  @media (min-width: 767px) {
+    min-height: 80px;
   }
 }
 
