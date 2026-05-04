@@ -1,9 +1,17 @@
+.slider {
+  position: relative;
+}
+
 .slider__wrapper {
   padding: 20px 20px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  &:not(:first-child) {
+    display: none;
+  }
 
   &--flat-white {
     background-color: $background-beige;
@@ -15,6 +23,77 @@
 
   &--tripple-espresso {
     background-color: $background-grey;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 0;
+  display: block;
+  min-width: 20px;
+  height: 100%;
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 20px;
+    mask-size: 11px 20px;
+    background-color: $primary-color;
+    mask-image: url("../../icons/stack.svg#slider-stroke");
+    mask-position: 50%;
+    mask-repeat: no-repeat;
+  }
+
+
+
+  &:disabled {
+    pointer-events: none;
+
+    &::before {
+      background-color: $base-grey;
+    }
+  }
+
+  &--prev {
+    left: 0;
+
+    &:hover,
+    &:focus-visible {
+      background: linear-gradient(to right, $base-white, transparent);
+    }
+
+    &:active {
+      background: linear-gradient(to right, rgba(120, 89, 207, 0.25), transparent);
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: linear-gradient(to left, #fff, transparent);
+    }
+
+    &:active {
+      background: linear-gradient(to left, rgba(120, 89, 207, 0.25), transparent);
+    }
+  }
+}
+
+.slider__pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 

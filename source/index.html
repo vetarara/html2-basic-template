@@ -58,6 +58,9 @@
     <main class="page__main">
       <section class="page__slider slider">
         <h2 class="visually-hidden">Самые популярные напитки</h2>
+        <button class="slider__button slider__button--prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
         <div class="slider__wrapper slider__wrapper--flat-white">
           <picture class="slider__image-wrapper">
             <source width="600" height="600" type="image/webp" media="(min-width: 1280px)" srcset="images/slider/flat-white-slider-desktop@1x.webp 1x, images/slider/flat-white-slider-desktop@2x.webp 2x">
@@ -120,6 +123,14 @@
             </p>
             <a class="promo-order__order-button" href="#">Заказать</a>
           </div>
+        </div>
+        <button class="slider__button slider__button--next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <div class="slider__pagination">
+          <button class="slider__dot slider__dot--active" data-slide="0" aria-label="1 слайд"></button>
+          <button class="slider__dot" data-slide="1" aria-label="2 слайд"></button>
+          <button class="slider__dot" data-slide="2" aria-label="3 слайд"></button>
         </div>
       </section>
       <section class="page__features features">
