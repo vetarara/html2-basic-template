@@ -1,1 +1,0 @@
-var e=document.querySelector(".sorting"),t=document.getElementById("select-control");t.addEventListener("mousedown",()=>{e.classList.add("open")});t.addEventListener("change",()=>{e.classList.remove("open")});document.addEventListener("click",n=>{e.contains(n.target)||e.classList.remove("open")});
