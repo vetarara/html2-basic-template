@@ -9,36 +9,91 @@
   font-weight: 600;
 }
 
-.filter-range__toggle {
+.filter-range__slider {
   position: relative;
   margin-bottom: 35px;
   width: 100%;
   height: 2px;
   background-color: $light-grey;
+  border: none;
+  box-shadow: none;
 
-  &::after {
+  /* stylelint-disable selector-class-pattern */
+  .noUi-connect {
     content: "";
     display: block;
-    width: 200px;
     height: 4px;
     position: absolute;
-    left: 10px;
     top: -1px;
     background-color: $primary-color-lighter;
   }
-}
 
-.filter-range__toggle-button {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: $base-white;
-  border-radius: 50%;
-  border: 2px solid $primary-color-lighter;
-  cursor: pointer;
-  z-index: 2;
+  .noUi-handle {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $base-white;
+    border-radius: 50%;
+    border: 2px solid $primary-color-lighter;
+    cursor: pointer;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: transparent;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &:hover::before,
+    &:focus-visible::before {
+      background-color: rgba(120, 89, 207, 0.25);
+    }
+
+    &:active::before {
+      background-color: $primary-color;
+    }
+  }
+
+  .noUi-handle-lower {
+    right: -24px;
+  }
+
+  .noUi-handle-upper {
+    right: 0;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+
+    .noUi-connect {
+      background-color: $base-grey;
+    }
+
+    .noUi-handle {
+      border-color: $base-grey;
+      cursor: default;
+
+      &:hover::before,
+      &:focus-visible::before,
+      &:active::before {
+        background-color: transparent;
+      }
+    }
+  }
+  /* stylelint-enable selector-class-pattern */
 }
 
 .filter-range__change {
@@ -59,7 +114,7 @@
   }
 }
 
-.filter-range__change-input {
+.filter-range__value {
   @include font-params(16px, 24px);
   width: 100%;
   padding: 8px 10px;
