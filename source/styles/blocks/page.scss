@@ -1,30 +1,17 @@
-@media (min-width: $tablet-width) {
-  .page__header {
+.page__header,
+.page__features,
+.page__footer {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
     margin: 0 auto;
     max-width: 728px;
   }
 
-  .page__features {
-    margin: 0 auto;
-    max-width: 728px;
-  }
-
-  .page__footer {
-    margin: 0 auto;
-    max-width: 728px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__header {
-    max-width: 1360px;
-  }
-
-  .page__features {
-    max-width: 1360px;
-  }
-
-  .page__footer {
+  @media (min-width: $desktop-width) {
     max-width: 1360px;
   }
 }
