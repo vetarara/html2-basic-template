@@ -48,8 +48,6 @@
     mask-repeat: no-repeat;
   }
 
-
-
   &:disabled {
     pointer-events: none;
 
@@ -80,7 +78,7 @@
 
     &:hover,
     &:focus-visible {
-      background: linear-gradient(to left, #fff, transparent);
+      background: linear-gradient(to left, $base-white, transparent);
     }
 
     &:active {
