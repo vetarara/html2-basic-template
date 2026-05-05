@@ -35,6 +35,7 @@
 
 .sorting__select {
   @include font-params(16px, 24px);
+  max-width: 50%;
   padding: 4px 30px 4px 7px;
   font-family: inherit;
   font-weight: 600;

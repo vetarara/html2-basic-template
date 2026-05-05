@@ -51,6 +51,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      transition: 0.2s ease;
     }
 
     &::after {
@@ -150,5 +151,6 @@
     border-color: $light-grey;
     cursor: not-allowed;
     pointer-events: none;
+    color: $light-grey;
   }
 }

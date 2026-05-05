@@ -53,4 +53,22 @@
     mask-repeat: no-repeat;
     background-color: $primary-color;
   }
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-color-lighter;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $primary-color-lighter;
+  }
+
+  &:active {
+    color: $primary-color-darker;
+  }
+
+  &:active::before {
+    background-color: $primary-color-darker;
+  }
 }

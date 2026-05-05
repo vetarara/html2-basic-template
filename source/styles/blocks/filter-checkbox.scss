@@ -22,6 +22,10 @@
 .filter-checkbox__control {
   @include font-params(16px, 24px);
   color: $base-black;
+
+  &:has(.filter-checkbox__input:disabled) {
+    color: $base-grey;
+  }
 }
 
 .filter-checkbox__input {
@@ -34,8 +38,10 @@
   min-width: 42px;
   height: 24px;
   background-color: $base-grey;
+  border: 2px solid $base-grey;
   border-radius: 12px;
   cursor: pointer;
+  transition: 0.2s ease;
 
   &::before {
     content: "";
@@ -44,17 +50,38 @@
     height: 20px;
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 0;
     transform: translateY(-50%);
     background-color: $base-white;
     border-radius: 50%;
+    transition: 0.2s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgba(120, 89, 207, 0.25);
+    border-color: $primary-color;
   }
 
   &[type="checkbox"]:checked {
     background-color: $primary-color;
+    border-color: $primary-color;
   }
 
   &[type="checkbox"]:checked::before {
-    left: 45%;
+    left: 48%;
+  }
+
+  &[type="checkbox"]:disabled {
+    background-color: $light-grey;
+    border-color: $light-grey;
+
+    &::before {
+      background-color: #f8f8f8;
+    }
+  }
+
+  &[type="checkbox"]:checked:disabled::before {
+    background-color: $base-grey;
   }
 }
