@@ -5,8 +5,13 @@
 
 .filter-radio__title {
   @include font-params(16px, 24px);
-  margin-bottom: 20px;
+  margin-bottom: 13px;
+  padding: 0;
   font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .filter-radio__change {
@@ -16,7 +21,7 @@
 .filter-radio__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
 }
 
 .filter-radio__control {

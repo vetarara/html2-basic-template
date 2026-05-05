@@ -50,9 +50,9 @@
   .pagination__link::before {
     content: "";
     display: block;
-    width: 16px;
-    height: 16px;
-    mask-size: 16px 16px;
+    width: 10px;
+    height: 6px;
+    mask-size: 10px 6px;
     background-color: $base-black;
     mask-position: 50%;
     mask-repeat: no-repeat;

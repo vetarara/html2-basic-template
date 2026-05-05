@@ -15,6 +15,11 @@
 }
 
 .catalog__wrapper {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     max-width: 728px;
@@ -35,6 +40,10 @@
   font-weight: 700;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
@@ -51,12 +60,14 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    margin-bottom: 36px;
   }
 }
 
 .catalog__filter {
   @media (min-width: $desktop-width) {
-    max-width: 318px;
+    margin-top: 4px;
+    min-width: 318px;
     height: fit-content;
   }
 }

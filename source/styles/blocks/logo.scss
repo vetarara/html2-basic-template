@@ -1,0 +1,11 @@
+.logo__image {
+  @media (min-width: $tablet-width) {
+    max-width: 82px;
+    min-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 170px;
+    min-height: 36px;
+  }
+}

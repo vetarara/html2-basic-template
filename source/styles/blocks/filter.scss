@@ -15,15 +15,22 @@
 }
 
 .filter__price {
+  margin: 0;
   border: none;
 }
 
 .filter__milk {
+  margin: 0;
   border: none;
 }
 
 .filter__country {
+  margin: 0;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .filter__buttons {
@@ -33,19 +40,29 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     flex-direction: row;
     grid-column: 1 / -1;
     justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
 .filter__apply {
   @include button;
+  margin-top: -1px;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 
@@ -55,5 +72,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }

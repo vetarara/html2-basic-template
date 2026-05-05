@@ -14,7 +14,6 @@
   // не tablet-width для корректного сокрытия кнопки и отображения меню при на 767px
   @media (min-width: 767px) {
     order: 0;
-    margin-right: 20px;
   }
 
   @media (min-width: $desktop-width) {

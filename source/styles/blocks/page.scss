@@ -7,11 +7,11 @@
   // не ограничиваю на мобильном, смотрится не очень
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    max-width: 728px;
+    width: 728px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1360px;
+    width: 1360px;
   }
 }
 

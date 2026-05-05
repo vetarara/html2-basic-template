@@ -8,6 +8,10 @@
     gap: 2px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 22px;
+  }
 }
 
 .menu__item {

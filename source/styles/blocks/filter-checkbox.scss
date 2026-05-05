@@ -5,7 +5,8 @@
 
 .filter-checkbox__title {
   @include font-params(16px, 24px);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  padding: 0;
   font-weight: 600;
 }
 
@@ -16,7 +17,7 @@
 .filter-checkbox__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
 }
 
 .filter-checkbox__control {
