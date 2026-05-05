@@ -5,7 +5,16 @@
   // не tablet-width для корректного сокрытия кнопки и отображения меню при на 767px
   @media (min-width: 767px) {
     justify-content: flex-start;
-    gap: 9vw;
+  }
+}
+
+.main-header__logo-title {
+  @media (min-width: $tablet-width) {
+    margin-right: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 162px;
   }
 }
 

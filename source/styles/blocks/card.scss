@@ -5,12 +5,26 @@
   gap: 4px;
   background-color: $base-white;
   text-align: left;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+  }
 }
 
 .card__link {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 14px;
   width: fit-content;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .card__title {
@@ -20,6 +34,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-params(24px, 36px);
+    margin-bottom: 5px;
   }
 }
 
@@ -29,7 +44,11 @@
 }
 
 .card__description {
-  margin: auto 0 14px;
+  margin: auto 0 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .card__purchase {
@@ -37,10 +56,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card__price {
   @include font-params(20px, 32px);
+  margin-left: -2px;
   font-weight: 600;
 }
 

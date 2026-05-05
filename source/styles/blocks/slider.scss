@@ -84,15 +84,17 @@
 
   @media (min-width: $tablet-width) {
     max-width: 608px;
-    padding: 60px 0 0;
+    padding: 58px 0 0;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1280px;
-    padding: 30px 0 84px 25px;
+    margin-bottom: -2px;
+    padding: 13px 0 84px 25px;
     display: grid;
     gap: 4px 30px;
-    grid-template-rows: 150px auto auto auto 1fr;
+    grid-template-rows: 161px auto auto auto 1fr;
     grid-template-columns: auto 1fr;
     text-align: left;
   }
@@ -107,6 +109,7 @@
   z-index: 3;
   background-color: transparent;
   border: none;
+  transition: background-color 0.3s ease 0.1s;
 
   &::before {
     content: "";
@@ -153,7 +156,7 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        left: 23px;
+        left: 29px;
       }
     }
   }
@@ -176,7 +179,7 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        left: 23px;
+        left: 29px;
       }
     }
   }
@@ -189,7 +192,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 70px;
+    bottom: 65px;
     display: flex;
     gap: 8px;
   }
@@ -213,6 +216,7 @@
     width: 100%;
     height: 4px;
     background-color: $base-white;
+    transition: background-color 0.3s ease 0.1s;
   }
 
   &:hover::before,
@@ -242,8 +246,6 @@
 }
 
 .slider__image {
-  margin-bottom: 6px;
-
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-top: 16px;
@@ -256,7 +258,12 @@
   font-weight: 700;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
@@ -269,10 +276,11 @@
 
   @media (min-width: $tablet-width) {
     @include font-params(56px, 80px);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
@@ -283,17 +291,21 @@
 
   @media (min-width: $tablet-width) {
     @include font-params(20px, 32px);
+    padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    padding: 0;
+    padding-right: 56px;
   }
 }
 
 .slider__order {
   @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
     align-self: start;

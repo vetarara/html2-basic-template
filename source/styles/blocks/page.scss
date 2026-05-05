@@ -1,6 +1,21 @@
+.page__main {
+  flex-grow: 1;
+}
+
 .page__header,
-.page__features,
 .page__footer {
+  // не ограничиваю на мобильном, смотрится не очень
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 728px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+  }
+}
+
+.page__features {
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
     max-width: 280px;

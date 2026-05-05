@@ -5,6 +5,7 @@
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <script src="./vendor/nouislider/nouislider.min.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -142,7 +143,7 @@
           </li>
           <li class="features__item feature feature--convenience">
             <h3 class="feature__title">Удобство</h3>
-            <p class="feature__description">Легко помещается и в карман, и в маленькую сумочку</p>
+            <p class="feature__description">Легко помещается и в карман,<br>и в маленькую сумочку</p>
           </li>
           <li class="features__item feature feature--vigor">
             <h3 class="feature__title">Бодрость</h3>
@@ -150,7 +151,7 @@
           </li>
           <li class="features__item feature feature--ecofriendly">
             <h3 class="feature__title">Экологичность</h3>
-            <p class="feature__description">Вся упаковка сделана из перерабатываемых материалов</p>
+            <p class="feature__description">Вся упаковка сделана<br>из перерабатываемых материалов</p>
           </li>
         </ul>
       </section>
@@ -161,19 +162,12 @@
           <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__price filter-range">
               <legend class="filter-range__title">Цена</legend>
-              <div class="filter-range__toggle">
-                <button class="filter-range__toggle-button filter-range__toggle-button--min" type="button">
-                  <span class="visually-hidden">Изменить минимальную стоимость</span>
-                </button>
-                <button class="filter-range__toggle-button filter-range__toggle-button--max" type="button">
-                  <span class="visually-hidden">Изменить максимальную стоимость</span>
-                </button>
-              </div>
+              <div class="filter-range__slider" id="slider"></div>
               <div class="filter-range__change">
                 <label class="visually-hidden" for="min">от</label>
-                <input class="filter-range__change-input" id="min" name="min-price" type="number" placeholder="0" min="0">
+                <input class="filter-range__value" id="min" name="min-price" type="number" placeholder="0" min="0">
                 <label class="visually-hidden" for="max">до</label>
-                <input class="filter-range__change-input" id="max" name="max-price" type="number" value="900" min="0">
+                <input class="filter-range__value" id="max" name="max-price" type="number" value="900" min="0">
               </div>
             </fieldset>
           <fieldset class="filter__milk filter-radio">
@@ -246,9 +240,9 @@
                 <h3 class="card__title">
                   <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
                 </h3>
-                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
                 <div class="card__purchase">
-                  <strong class="card__price">225 ₽</strong>
+                  <strong class="card__price">225₽</strong>
                   <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>
@@ -262,9 +256,9 @@
                 <h3 class="card__title">
                   <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
                 </h3>
-                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
                 <div class="card__purchase">
-                  <strong class="card__price">225 ₽</strong>
+                  <strong class="card__price">225₽</strong>
                   <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>
@@ -278,9 +272,9 @@
                 <h3 class="card__title">
                   <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
                 </h3>
-                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
                 <div class="card__purchase">
-                  <strong class="card__price">225 ₽</strong>
+                  <strong class="card__price">225₽</strong>
                   <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>
@@ -294,9 +288,9 @@
                 <h3 class="card__title">
                   <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
                 </h3>
-                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
                 <div class="card__purchase">
-                  <strong class="card__price">225 ₽</strong>
+                  <strong class="card__price">225₽</strong>
                   <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>
@@ -310,9 +304,9 @@
                 <h3 class="card__title">
                   <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
                 </h3>
-                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
                 <div class="card__purchase">
-                <strong class="card__price">225 ₽</strong>
+                <strong class="card__price">225₽</strong>
                 <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>
@@ -326,9 +320,9 @@
                 <h3 class="card__title">
                   <a class="card__title-link" href="#" tabindex="-1">Декаф Флэт Уайт</a>
                 </h3>
-                <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
                 <div class="card__purchase">
-                  <strong class="card__price">225 ₽</strong>
+                  <strong class="card__price">225₽</strong>
                   <a class="card__order" href="#">В корзину</a>
                 </div>
               </li>

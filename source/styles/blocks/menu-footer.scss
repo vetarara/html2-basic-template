@@ -11,4 +11,13 @@
   padding: 8px 0;
   font-weight: 500;
   color: $base-black;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-color-lighter;
+  }
+
+  &:active {
+    color: $primary-color-darker;
+  }
 }

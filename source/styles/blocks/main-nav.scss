@@ -14,7 +14,6 @@
   // не tablet-width для корректного сокрытия кнопки и отображения меню при на 767px
   @media (min-width: 767px) {
     order: 0;
-    margin-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +38,7 @@
     left: 0;
     width: 100vw;
     z-index: 10;
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $secondary-color;
   }
 
   .main-nav__toggle {

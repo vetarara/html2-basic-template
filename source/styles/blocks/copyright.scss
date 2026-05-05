@@ -1,5 +1,14 @@
 .copyright {
   padding: 20px 20px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
 
 .copyright__dev {
@@ -12,7 +21,10 @@
 
 .copyright__link {
   @include font-params(12px, 16px);
+  margin: 0 auto;
+  width: fit-content;
   position: relative;
+  display: block;
   padding-right: 16px;
   color: $base-grey;
   text-decoration: none;
